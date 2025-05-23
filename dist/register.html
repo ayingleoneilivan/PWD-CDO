@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="">
+    <nav class="py-8 bg-white shadow-sm/20 relative">
+        <div class="mx-40  flex justify-between items-center">
+            <a><img class="h-16 w-auto" src="/images/cagayandeoro.png" alt=""></a>
+            <div class=""> 
+                <ul class="flex space-x-8 text-lg text-[#013056]">
+                    <li class="hover:text-[#1A99FE]"><a href="/dist/home.html" class="">Home</a></li>
+                    <li class="hover:text-[#1A99FE]"><a href="#" class="">Services</a></li>
+                    <li class="hover:text-[#1A99FE]"><a href="#" class="">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-[#EEF3FB]">
+        <div class="py-20 space-y-6">
+            <div class="w-10/12 mx-auto bg-white p-8 rounded shadow">
+                <h2 class="text-2xl font-bold mb-6 text-[#013056]">Personal Information</h2>
+                <form class="space-y-6">
+                    <!-- Application Type -->
+                    <div class="flex items-center space-x-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="applicationType" class="mr-2 accent-black" /> New
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="applicationType" class="mr-2 accent-black" /> Renew
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="applicationType" class="mr-2 accent-black" /> Lost ID
+                        </label>
+                    </div>
+
+                    <!-- Name Fields -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <input type="text" placeholder="Last Name" class="border p-2 rounded w-full" />
+                        <input type="text" placeholder="First Name" class="border p-2 rounded w-full" />
+                        <input type="text" placeholder="Middle Name" class="border p-2 rounded w-full" />
+                    </div>
+
+                    <!-- Demographic Info -->
+                    <div class="grid grid-cols-4 gap-4">
+                        <select class="border p-2 rounded w-full text-gray-400" placeholder="Sex" oninput="this.style.color='#000'">
+                            <option value="" disabled selected class="text-gray-400">Sex</option>
+                            <option class="text-black">Male</option>
+                            <option class="text-black">Female</option>
+                        </select>
+                        <select class="border p-2 rounded w-full text-gray-400" placeholder="Civil Status" oninput="this.style.color='#000'">
+                            <option value="" disabled selected class="text-gray-400">Civil Status</option>
+                            <option class="text-black">Single</option>
+                            <option class="text-black">Married</option>
+                            <option class="text-black">Widowed</option>
+                        </select>
+                        <input type="date" placeholder="Date of Birth" class="border p-2 rounded w-full text-gray-400 placeholder-gray-400" oninput="this.style.color='#000'" />
+                        <input type="text" placeholder="Place of Birth" class="border p-2 rounded w-full" />
+                    </div>
+
+                    <!-- Address and Contact -->
+                    <div class="grid grid-cols-4 gap-4">
+                        <input type="text" placeholder="Barangay" class="col-span-1 border p-2 rounded w-full" />
+                        <input type="text" placeholder="Address" class="col-span-3 border p-2 rounded w-full" />
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <select class="border p-2 rounded w-full text-gray-400" placeholder="Blood Type">
+                            <option value="" disabled selected class="text-gray-400">Blood Type</option>
+                            <option class="text-black">None</option>
+                            <option class="text-black">A+</option>
+                            <option class="text-black">A-</option>
+                            <option class="text-black">B+</option>
+                            <option class="text-black">B-</option>
+                            <option class="text-black">O+</option>
+                            <option class="text-black">O-</option>
+                            <option class="text-black">AB+</option>
+                            <option class="text-black">AB-</option>
+                        </select>
+                        <input type="text" placeholder="Religion" class="border p-2 rounded w-full" />
+                    </div>
+                    <input type="text" placeholder="Source of Income" class="border p-2 rounded w-full" />
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="Contact No." class="border p-2 rounded w-full" />
+                        <div class="flex items-center space-x-4">
+                            <span>Comelec Registered:</span>
+                            <label class="flex items-center"><input type="radio" name="comelec" class="mr-2 accent-black" /> Yes</label>
+                            <label class="flex items-center"><input type="radio" name="comelec" class="mr-2 accent-black" /> No</label>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <h3 class="text-xl font-semibold mb-2 text-[#013056]">Membership</h3>
+                        <div class="flex space-x-4 mb-2">
+                            <label class="flex items-center"><input type="checkbox" class="mr-2" /> SSS</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-2" /> GSIS</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-2" /> Phil Health</label>
+                        </div>
+                        <input type="text" placeholder="Description" class="border p-2 rounded w-full" />
+                    </div>
+
+                    <!-- Guardian and Organization Info -->
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-[#013056]">Guardian</h3>
+                            <input type="text" placeholder="Guardian's Name" class="border p-2 rounded w-full mb-2" />
+                            <input type="text" placeholder="Relationship" class="border p-2 rounded w-full mb-2" />
+                            <input type="text" placeholder="Contact No." class="border p-2 rounded w-full mb-2" />
+                            <input type="text" placeholder="Address" class="border p-2 rounded w-full" />
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-[#013056]">Organization Affiliated</h3>
+                            <input type="text" placeholder="Organization Name" class="border p-2 rounded w-full mb-2" />
+                            <input type="text" placeholder="President Name" class="border p-2 rounded w-full mb-2" />
+                            <input type="text" placeholder="Contact No." class="border p-2 rounded w-full" />
+                        </div>
+                    </div>
+
+                    <!-- Consent and Submit -->
+                    <div class="mt-6 text-sm text-gray-700 border-y border-gray-300 py-4">
+                        <p>
+                            By submitting the data required in this <strong>PWD ID Online Application</strong>, You <strong>CONSENT</strong> to the collection, generation, use, processing, storage and retention of your personal information and sensitive personal information by the <strong>City Social Welfare & Development Department</strong> for the purpose(s) described in this document. PLEASE ensure that you have completely read and understood <strong>the Data Privacy Notice of this data processing system</strong> before submitting. You also authorized the Office to disclose your information to accredited or non-accredited parties.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center justify-end mt-6 space-x-8">
+                        <label class="flex items-center text-sm"><input type="checkbox" class="mr-2" /> I Agree</label>
+                        <a href="/dist/typeOfDisability.html" class="bg-[#D71624] text-white font-semibold px-8 py-2 rounded-4xl hover:bg-red-700 text-center inline-block">Next</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="py-12">
+        <div class="flex justify-center items-center space-x-32">
+            <a href="https://cagayandeoro.gov.ph/" target="_blank">
+                <img src="/images/cdocogf.png" alt="Logo 1" class="max-h-20 w-auto object-contain" />
+            </a>
+            <a href="https://cagayandeoro.gov.ph/index.php/news/the-city-mayor/rise1.html" target="_blank">
+                <img src="/images/cdorise.png" alt="Logo 2" class="max-h-20 w-auto object-contain" />
+            </a>
+            <a href="https://www.facebook.com/lgucdo.cmisid" target="_blank">
+                <img src="/images/cdoict.png" alt="Logo 3" class="max-h-20 w-auto object-contain" />
+            </a>
+        </div>
+    </section>
+    <footer class="">
+        <div class="bg-[#013056] py-20">
+            <div class="text-white flex justify-center space-x-32">
+                <div class="space-y-2">
+                    <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
+                    <div class="flex flex-col space-y-1">
+                        <a href="">Solo Parent Online Registration</a>
+                        <a href="">Senior Citizen Online Registration</a>
+                        <a href="">Educational Assistance Online Application</a>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="text-lg font-semibold">SUPPORT</h1>
+                    <div class="flex flex-col space-y-1">
+                        <h2>Phone: +63 953 112 2974</h2>
+                        <h2>Person with Disability Section</h2>
+                        <h2>City Social Welfare Department, City Hall, Cagayan de Oro City</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#001225] py-6">
+            <h1 class="flex justify-center text-white text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
+        </div>
+    </footer>
+</body>
+</html>

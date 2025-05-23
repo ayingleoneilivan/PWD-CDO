@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="">
+    <nav class="py-8 bg-white shadow-sm/20 relative">
+        <div class="mx-40  flex justify-between items-center"</div>
+            <a><img class="h-16 w-auto" src="/images/cagayandeoro.png" alt=""></a>
+            <div class=""> 
+                <ul class="flex space-x-8 text-lg text-[#013056]">
+                    <li class="hover:text-[#1A99FE]"><a href="/dist/home.html" class="">Home</a></li>
+                    <li class="hover:text-[#1A99FE]"><a href="#" class="">Services</a></li>
+                    <li class="hover:text-[#1A99FE]"><a href="#" class="">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-[#EEF3FB]">
+        <div class="py-20 space-y-6">
+            <div class="max-w-7xl mx-auto bg-white p-8 rounded shadow">
+                <h2 class="text-2xl font-bold mb-6 text-[#013056]">Family Member</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-3 gap-4">
+                        <input type="text" placeholder="Name of Household Member" class="border p-2 rounded w-full" />
+                        <input type="text" placeholder="Relationship" class="border p-2 rounded w-full" />
+                        <input type="text" placeholder="Age" class="border p-2 rounded w-full" />
+                    </div>
+                    <div class="grid grid-cols-5 gap-4">
+                        <input type="text" placeholder="Civil Status" class="col-span-1 border p-2 rounded w-full" />
+                        <input type="text" placeholder="Eductional Attainment" class="col-span-2 border p-2 rounded w-full" />
+                        <input type="text" placeholder="Skills/Vocational Training Attended" class="col-span-2 border p-2 rounded w-full" />
+                    </div>
+                    <hr class="my-8 text-gray-300">
+                    <div class="flex justify-center items-center mt-8">
+                        <button type="button" id="add-member-btn" class="bg-[#1A99FE] hover:bg-[#007ADC] text-white px-8 py-2 rounded-full font-semibold inline-block text-center">Add</button>
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <div class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300">
+                        <a href="/dist/utilities.html" class="bg-white text-[#013056] border-2 hover:text-white hover:bg-[#013056] border-[#013056] px-8 py-2 rounded-full font-semibold inline-block text-center">Back</a>
+                        <a href="/dist/requiredDocuments.html" class="bg-[#D71624] text-white px-8 py-2 rounded-full font-semibold inline-block text-center hover:bg-red-700">Next</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="py-12">
+        <div class="flex justify-center items-center space-x-32">
+            <a href="https://cagayandeoro.gov.ph/" target="_blank">
+                <img src="/images/cdocogf.png" alt="Logo 1" class="max-h-20 w-auto object-contain" />
+            </a>
+            <a href="https://cagayandeoro.gov.ph/index.php/news/the-city-mayor/rise1.html" target="_blank">
+                <img src="/images/cdorise.png" alt="Logo 2" class="max-h-20 w-auto object-contain" />
+            </a>
+            <a href="https://www.facebook.com/lgucdo.cmisid" target="_blank">
+                <img src="/images/cdoict.png" alt="Logo 3" class="max-h-20 w-auto object-contain" />
+            </a>
+        </div>
+    </section>
+    <footer class="">
+        <div class="bg-[#013056] py-20">
+            <div class="text-white flex justify-center space-x-32">
+                <div class="space-y-2">
+                    <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
+                    <div class="flex flex-col space-y-1">
+                        <a href="">Solo Parent Online Registration</a>
+                        <a href="">Senior Citizen Online Registration</a>
+                        <a href="">Educational Assistance Online Application</a>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="text-lg font-semibold">SUPPORT</h1>
+                    <div class="flex flex-col space-y-1">
+                        <h2>Phone: +63 953 112 2974</h2>
+                        <h2>Person with Disability Section</h2>
+                        <h2>City Social Welfare Department, City Hall, Cagayan de Oro City</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#001225] py-6">
+            <h1 class="flex justify-center text-white text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
+        </div>
+    </footer>
+</body>
+<script>
+    const form = document.querySelector('form');
+    const addBtn = document.getElementById('add-member-btn');
+
+    function createMemberSet() {
+        // Container for the set
+        const container = document.createElement('div');
+        container.className = "family-member-set space-y-6";
+
+        // First row
+        const row1 = document.createElement('div');
+        row1.className = "grid grid-cols-3 gap-4 mt-4";
+        row1.innerHTML = `
+            <input type="text" placeholder="Name of Household Member" class="border p-2 rounded w-full" />
+            <input type="text" placeholder="Relationship" class="border p-2 rounded w-full" />
+            <input type="text" placeholder="Age" class="border p-2 rounded w-full" />
+        `;
+
+        // Second row
+        const row2 = document.createElement('div');
+        row2.className = "grid grid-cols-5 gap-4";
+        row2.innerHTML = `
+            <input type="text" placeholder="Civil Status" class="col-span-1 border p-2 rounded w-full" />
+            <input type="text" placeholder="Educational Attainment" class="col-span-2 border p-2 rounded w-full" />
+            <input type="text" placeholder="Skills/Vocational Training Attended" class="col-span-2 border p-2 rounded w-full" />
+        `;
+
+        // Remove button wrapper (centered)
+        const removeBtnWrapper = document.createElement('div');
+        removeBtnWrapper.className = "flex justify-center mt-2";
+
+        // Remove button
+        const removeBtn = document.createElement('button');
+        removeBtn.type = "button";
+        removeBtn.className = "bg-red-500 hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold";
+        removeBtn.textContent = "Remove";
+        removeBtn.onclick = function() {
+            container.remove();
+            hr.remove();
+        };
+
+        removeBtnWrapper.appendChild(removeBtn);
+
+        // HR separator
+        const hr = document.createElement('hr');
+        hr.className = "my-8 text-gray-300";
+
+        // Append all to container
+        container.appendChild(row1);
+        container.appendChild(row2);
+        container.appendChild(removeBtnWrapper);
+
+        return {container, hr};
+    }
+
+    addBtn.addEventListener('click', function() {
+        const {container, hr} = createMemberSet();
+        // Insert before the first <hr> in the form (the separator before navigation buttons)
+        const hrRef = form.querySelector('hr');
+        form.insertBefore(hr, hrRef);
+        form.insertBefore(container, hrRef);
+    });
+</script>
+</html>

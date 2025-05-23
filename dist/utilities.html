@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="">
+    <nav class="py-8 bg-white shadow-sm/20 relative">
+        <div class="mx-40  flex justify-between items-center"</div>
+            <a><img class="h-16 w-auto" src="/images/cagayandeoro.png" alt=""></a>
+            <div class=""> 
+                <ul class="flex space-x-8 text-lg text-[#013056]">
+                    <li class="hover:text-[#1A99FE]"><a href="/dist/home.html" class="">Home</a></li>
+                    <li class="hover:text-[#1A99FE]"><a href="#" class="">Services</a></li>
+                    <li class="hover:text-[#1A99FE]"><a href="#" class="">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-[#EEF3FB]">
+        <div class="py-20 space-y-6">
+            <div class="max-w-7xl mx-auto bg-white p-8 rounded shadow">
+    <h2 class="text-2xl font-bold text-[#013056] mb-6 pb-2">Utilities</h2>
+    <form>
+        <div class="mx-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Column 1 -->
+            <div>
+                <h3 class="font-bold text-[#013056] mb-2">House and Lot</h3>
+                <div class="space-y-1">
+                    <label><input type="checkbox" class="mr-2"> Owned House & Lot</label><br>
+                    <label><input type="checkbox" class="mr-2"> Share w/ Parents/Relatives </label><br>
+                    <label><input type="checkbox" class="mr-2"> Caretaker of the House & Lot</label><br>
+                    <label><input type="checkbox" class="mr-2"> Owner House via Mortgage</label><br>
+                    <label><input type="checkbox" class="mr-2"> Rented Home/Lot</label><br>
+                    <label>
+                        <input type="checkbox" class="mr-2" id="othersCheckbox" onchange="document.getElementById('othersInput').style.display = this.checked ? 'block' : 'none';">
+                        Others
+                    </label><br>
+                    <div id="othersInput" style="display:none;">
+                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                    </div>
+
+
+                </div>
+
+                <h3 class="font-bold text-[#013056] mt-6 mb-2">Fuel</h3>
+                <div class="space-y-1">
+                    <label><input type="checkbox" class="mr-2"> LPG</label><br>
+                    <label><input type="checkbox" class="mr-2"> Firewood</label><br>
+                    <label><input type="checkbox" class="mr-2"> Sawdust</label><br>
+                    <label>
+                        <input type="checkbox" class="mr-2" id="laborerCheckbox" onchange="document.getElementById('laborerInput').style.display = this.checked ? 'block' : 'none';">
+                        Laborer
+                    </label><br>
+                    <div id="laborerInput" style="display:none;">
+                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="font-bold text-[#013056] mb-2">Water</h3>
+                <div class="space-y-1">
+                    <label><input type="checkbox" class="mr-2"> Standard Water System</label><br>
+                    <label><input type="checkbox" class="mr-2"> Spring</label><br>
+                    <label><input type="checkbox" class="mr-2"> Deep Well</label><br>
+                    <label><input type="checkbox" class="mr-2"> Water Pump</label>
+                </div>
+
+                <h3 class="font-bold text-[#013056] mt-6 mb-2">Toilet Facility</h3>
+                <div class="space-y-1">
+                    <label>
+                        <input type="checkbox" class="mr-2" id="toiletOwnedCheckbox" onchange="document.getElementById('toiletOwnedInput').style.display = this.checked ? 'block' : 'none';">
+                        Owned
+                    </label><br>
+                    <div id="toiletOwnedInput" style="display:none;">
+                        <input type="text" placeholder="Shared with" class="border rounded mt-2 px-2 py-1 w-full" />
+                    </div>
+                    <label><input type="checkbox" class="mr-2"> None</label>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+            <h3 class="font-bold text-[#013056] mb-2">Light (Electricity)</h3>
+                <div class="space-y-1">
+                    <label><input type="checkbox" class="mr-2"> Tapped</label><br>
+                    <label><input type="checkbox" class="mr-2"> Own Connection</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300">
+            <a href="/dist/employmentAndEducation.html" class="bg-white text-[#013056] border-2 hover:text-white hover:bg-[#013056] border-[#013056] px-8 py-2 rounded-full font-semibold inline-block text-center">Back</a>
+            <a href="/dist/familyMember.html" class="bg-[#D71624] text-white hover:bg-red-700 px-8 py-2 rounded-full font-semibold inline-block text-center">Next</a>
+        </div>
+    </form>
+        </div>
+    </section>
+    <section class="py-12">
+        <div class="flex justify-center items-center space-x-32">
+            <a href="https://cagayandeoro.gov.ph/" target="_blank">
+                <img src="/images/cdocogf.png" alt="Logo 1" class="max-h-20 w-auto object-contain" />
+            </a>
+            <a href="https://cagayandeoro.gov.ph/index.php/news/the-city-mayor/rise1.html" target="_blank">
+                <img src="/images/cdorise.png" alt="Logo 2" class="max-h-20 w-auto object-contain" />
+            </a>
+            <a href="https://www.facebook.com/lgucdo.cmisid" target="_blank">
+                <img src="/images/cdoict.png" alt="Logo 3" class="max-h-20 w-auto object-contain" />
+            </a>
+        </div>
+    </section>
+    <footer class="">
+        <div class="bg-[#013056] py-20">
+            <div class="text-white flex justify-center space-x-32">
+                <div class="space-y-2">
+                    <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
+                    <div class="flex flex-col space-y-1">
+                        <a href="">Solo Parent Online Registration</a>
+                        <a href="">Senior Citizen Online Registration</a>
+                        <a href="">Educational Assistance Online Application</a>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h1 class="text-lg font-semibold">SUPPORT</h1>
+                    <div class="flex flex-col space-y-1">
+                        <h2>Phone: +63 953 112 2974</h2>
+                        <h2>Person with Disability Section</h2>
+                        <h2>City Social Welfare Department, City Hall, Cagayan de Oro City</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#001225] py-6">
+            <h1 class="flex justify-center text-white text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
+        </div>
+    </footer>
+</body>
+</html>
