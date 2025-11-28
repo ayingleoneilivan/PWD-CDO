@@ -14,131 +14,137 @@
     </style>
 </head>
 <body class="">
-    <nav class="py-8 bg-white shadow-sm/20 relative">
+    <nav class="py-8 bg-white dark:bg-neutral-900 shadow-sm/20 relative">
         <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 flex justify-between items-center">
             <a><img class="h-16 w-auto" src="images/cagayandeoro.png" alt=""></a>
-            <div class=""> 
-                <ul class="flex space-x-8 text-lg text-[#013056]">
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">Home</a></li>
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">Services</a></li>
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">About</a></li>
+            <div class="flex items-center space-x-8">
+                <ul class="flex space-x-8 text-lg text-[#013056] dark:text-neutral-100">
+                    <li class="hover:text-[#1A99FE] dark:hover:text-blue-400"><a href="index.html" class="">Home</a></li>
+                    <li class="hover:text-[#1A99FE] dark:hover:text-blue-400"><a href="index.html" class="">Services</a></li>
+                    <li class="hover:text-[#1A99FE] dark:hover:text-blue-400"><a href="index.html" class="">About</a></li>
                 </ul>
+                <button id="dark-mode-toggle" class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 hidden dark:block">
+                    <i class="ph ph-moon text-2xl"></i>
+                </button>
+                <button id="light-mode-toggle" class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 block dark:hidden">
+                    <i class="ph ph-sun text-2xl"></i>
+                </button>
             </div>
         </div>
     </nav>
-    <section class="bg-[#EEF3FB]">
+    <section class="bg-[#EEF3FB] dark:bg-neutral-800">
         <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 py-20 space-y-6">
-            <div class="max-w-7xl mx-auto bg-white p-8 rounded shadow">
-    <h2 class="text-2xl font-bold text-[#013056] mb-6 pb-2">Employment and Education</h2>
+            <div class="max-w-7xl mx-auto bg-white dark:bg-neutral-900 p-8 rounded shadow">
+    <h2 class="text-2xl font-bold text-[#013056] dark:text-neutral-100 mb-6 pb-2">Employment and Education</h2>
     <form>
         <div class="mx-12 grid grid-cols-1 md:grid-cols-3 gap-8">
 
             <!-- Column 1 -->
             <div>
-                <h3 class="font-bold text-[#013056] mb-2">Employment Status</h3>
+                <h3 class="font-bold text-[#013056] dark:text-neutral-100 mb-2">Employment Status</h3>
                 <div class="space-y-1">
-                    <label><input type="checkbox" class="mr-2"> Employed</label><br>
-                    <label><input type="checkbox" class="mr-2"> Resigned</label><br>
-                    <label><input type="checkbox" class="mr-2"> Displaced Worker</label><br>
-                    <label><input type="checkbox" class="mr-2"> Returning OFW</label><br>
-                    <label><input type="checkbox" class="mr-2"> Unemployed</label><br>
-                    <label><input type="checkbox" class="mr-2"> Retired</label>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Employed</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Resigned</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Displaced Worker</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Returning OFW</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Unemployed</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Retired</label>
 
 
                 </div>
 
-                <h3 class="font-bold text-[#013056] mt-6 mb-2">Type of Skill</h3>
+                <h3 class="font-bold text-[#013056] dark:text-neutral-100 mt-6 mb-2">Type of Skill</h3>
                 <div class="space-y-1">
-                    <label><input type="checkbox" class="mr-2"> Technical Skill</label><br>
-                    <label><input type="checkbox" class="mr-2"> Office Clerk</label><br>
-                    <label><input type="checkbox" class="mr-2"> Service Workers</label><br>
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Technical Skill</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Office Clerk</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Service Workers</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="laborerCheckbox" onchange="document.getElementById('laborerInput').style.display = this.checked ? 'block' : 'none';">
                         Laborer
                     </label><br>
                     <div id="laborerInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full"/>
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"/>
                     </div>
                 </div>
             </div>
 
             <!-- Column 2 -->
             <div>
-                <h3 class="font-bold text-[#013056] mb-2">Type of Employment</h3>
+                <h3 class="font-bold text-[#013056] dark:text-neutral-100 mb-2">Type of Employment</h3>
                 <div class="space-y-1">
-                    <label><input type="checkbox" class="mr-2"> Permanent</label><br>
-                    <label><input type="checkbox" class="mr-2"> Self-Employed</label><br>
-                    <label><input type="checkbox" class="mr-2"> Contractual</label><br>
-                    <label><input type="checkbox" class="mr-2"> Seasonal</label>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Permanent</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Self-Employed</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Contractual</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Seasonal</label>
                 </div>
 
-                <h3 class="font-bold text-[#013056] mt-6 mb-2">Nature of Employer</h3>
+                <h3 class="font-bold text-[#013056] dark:text-neutral-100 mt-6 mb-2">Nature of Employer</h3>
                 <div class="space-y-1">
-                    <label><input type="checkbox" class="mr-2"> Private</label><br>
-                    <label><input type="checkbox" class="mr-2"> Government</label>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Private</label><br>
+                    <label class="text-gray-700 dark:text-neutral-300"><input type="checkbox" class="mr-2"> Government</label>
                 </div>
             </div>
 
             <!-- Column 3 -->
             <div>
-            <h3 class="font-bold text-[#013056] mb-2">Highest Educational Attainment</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mb-2">Highest Educational Attainment</h3>
                 <div class="space-y-1">
                     
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="elementaryCheckbox" onchange="document.getElementById('elementaryInput').style.display = this.checked ? 'block' : 'none';">
                         Elementary (Grade)
                     </label><br>
                     <div id="elementaryInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="highschoolCheckbox" onchange="document.getElementById('highschoolInput').style.display = this.checked ? 'block' : 'none';">
                         High School
                     </label><br>
                     <div id="highschoolInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="collegeCheckbox" onchange="document.getElementById('collegeInput').style.display = this.checked ? 'block' : 'none';">
                         College
                     </label><br>
                     <div id="collegeInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="postgradCheckbox" onchange="document.getElementById('postgradInput').style.display = this.checked ? 'block' : 'none';">
                         Post Graduate
                     </label><br>
                     <div id="postgradInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="vocationalCheckbox" onchange="document.getElementById('vocationalInput').style.display = this.checked ? 'block' : 'none';">
                         Vocational
                     </label><br>
                     <div id="vocationalInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="spedCheckbox" onchange="document.getElementById('spedInput').style.display = this.checked ? 'block' : 'none';">
                         SPED
                     </label><br>
                     <div id="spedInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
-                    <label>
+                    <label class="text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2" id="alsCheckbox" onchange="document.getElementById('alsInput').style.display = this.checked ? 'block' : 'none';">
                         ALS
                     </label>
-                    <label class="ml-4">
+                    <label class="ml-4 text-gray-700 dark:text-neutral-300">
                         <input type="checkbox" class="mr-2"> NONE
                     </label>
                     <div id="alsInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
                     
                     <div id="alsInput" style="display:none;">
-                        <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                        <input type="text" placeholder="Description" class="border border-gray-300 dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
                     </div>
                     
                 </div>
@@ -146,9 +152,9 @@
         </div>
 
         <!-- Navigation Buttons -->
-        <div class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300">
-            <a href="typeOfDisability.html" class="bg-white text-[#013056] border-2 hover:text-white hover:bg-[#013056] border-[#013056] px-8 py-2 rounded-full font-semibold inline-block text-center">Back</a>
-            <a href="utilities.html" class="bg-[#D71624] text-white px-8 py-2 rounded-full font-semibold inline-block text-center hover:bg-red-700">Next</a>
+        <div class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300 dark:border-neutral-600">
+            <a href="typeOfDisability.html" class="bg-white dark:bg-neutral-800 text-[#013056] dark:text-neutral-100 border-2 hover:text-white dark:hover:text-neutral-100 hover:bg-[#013056] dark:hover:bg-neutral-700 border-[#013056] dark:border-neutral-100 px-8 py-2 rounded-full font-semibold inline-block text-center">Back</a>
+            <a href="utilities.html" class="bg-[#D71624] dark:bg-red-600 text-white px-8 py-2 rounded-full font-semibold inline-block text-center hover:bg-red-700 dark:hover:bg-red-500">Next</a>
         </div>
     </form>
         </div>
@@ -167,14 +173,14 @@
         </div>
     </section>
     <footer class="">
-        <div class="bg-[#013056] py-20">
-            <div class="text-white flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32">
+        <div class="bg-[#013056] dark:bg-neutral-900 py-20">
+            <div class="text-white dark:text-neutral-100 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32">
                 <div class="space-y-2">
                     <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
                     <div class="flex flex-col space-y-1">
-                        <a href="">Solo Parent Online Registration</a>
-                        <a href="">Senior Citizen Online Registration</a>
-                        <a href="">Educational Assistance Online Application</a>
+                        <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400">Solo Parent Online Registration</a>
+                        <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400">Senior Citizen Online Registration</a>
+                        <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400">Educational Assistance Online Application</a>
                     </div>
                 </div>
                 <div class="space-y-2">
@@ -188,9 +194,35 @@
             </div>
         </div>
 
-        <div class="bg-[#001225] py-6">
-            <h1 class="flex justify-center text-white text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
+        <div class="bg-[#001225] dark:bg-neutral-950 py-6">
+            <h1 class="flex justify-center text-white dark:text-neutral-100 text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
         </div>
     </footer>
+    <script>
+      // Dark mode toggle
+      const darkToggle = document.getElementById('dark-mode-toggle');
+      const lightToggle = document.getElementById('light-mode-toggle');
+      const html = document.documentElement;
+
+      // Load saved theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        html.classList.add('dark');
+      }
+
+      // Toggle function
+      function toggleDarkMode() {
+        if (html.classList.contains('dark')) {
+          html.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+
+      darkToggle.addEventListener('click', toggleDarkMode);
+      lightToggle.addEventListener('click', toggleDarkMode);
+    </script>
 </body>
 </html>

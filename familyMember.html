@@ -17,87 +17,107 @@
     </style>
   </head>
   <body class="">
-    <nav class="py-8 bg-white shadow-sm/20 relative">
+    <nav class="py-8 bg-white dark:bg-neutral-900 shadow-sm/20 relative">
       <div
         class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 flex justify-between items-center"
       >
         <a><img class="h-16 w-auto" src="images/cagayandeoro.png" alt="" /></a>
-        <div class="">
-          <ul class="flex space-x-8 text-lg text-[#013056]">
-            <li class="hover:text-[#1A99FE]">
+        <div class="flex items-center space-x-8">
+          <ul
+            class="flex space-x-8 text-lg text-[#013056] dark:text-neutral-100"
+          >
+            <li class="hover:text-[#1A99FE] dark:hover:text-blue-400">
               <a href="index.html" class="">Home</a>
             </li>
-            <li class="hover:text-[#1A99FE]">
+            <li class="hover:text-[#1A99FE] dark:hover:text-blue-400">
               <a href="index.html" class="">Services</a>
             </li>
-            <li class="hover:text-[#1A99FE]">
+            <li class="hover:text-[#1A99FE] dark:hover:text-blue-400">
               <a href="index.html" class="">About</a>
             </li>
           </ul>
+          <button
+            id="dark-mode-toggle"
+            class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 hidden dark:block"
+          >
+            <i class="ph ph-moon text-2xl"></i>
+          </button>
+          <button
+            id="light-mode-toggle"
+            class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 block dark:hidden"
+          >
+            <i class="ph ph-sun text-2xl"></i>
+          </button>
         </div>
       </div>
     </nav>
-    <section class="bg-[#EEF3FB]">
+    <section class="bg-[#EEF3FB] dark:bg-neutral-800">
       <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 py-20 space-y-6">
-        <div class="max-w-7xl mx-auto bg-white p-8 rounded shadow">
-          <h2 class="text-2xl font-bold mb-6 text-[#013056]">Family Member</h2>
+        <div
+          class="max-w-7xl mx-auto bg-white dark:bg-neutral-900 p-8 rounded shadow"
+        >
+          <h2
+            class="text-2xl font-bold mb-6 text-[#013056] dark:text-neutral-100"
+          >
+            Family Member
+          </h2>
           <form class="space-y-6">
             <div class="grid grid-cols-3 gap-4">
               <input
                 type="text"
                 placeholder="Name of Household Member"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <input
                 type="text"
                 placeholder="Relationship"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <input
                 type="text"
                 placeholder="Age"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
             </div>
             <div class="grid grid-cols-5 gap-4">
               <input
                 type="text"
                 placeholder="Civil Status"
-                class="col-span-1 border p-2 rounded w-full"
+                class="col-span-1 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <input
                 type="text"
                 placeholder="Eductional Attainment"
-                class="col-span-2 border p-2 rounded w-full"
+                class="col-span-2 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <input
                 type="text"
                 placeholder="Skills/Vocational Training Attended"
-                class="col-span-2 border p-2 rounded w-full"
+                class="col-span-2 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
             </div>
-            <hr class="my-8 text-gray-300" />
+            <hr class="my-8 text-gray-300 dark:text-neutral-600" />
             <div class="flex justify-center items-center mt-8">
               <button
                 type="button"
                 id="add-member-btn"
-                class="bg-[#1A99FE] hover:bg-[#007ADC] text-white px-8 py-2 rounded-full font-semibold inline-block text-center"
+                class="bg-[#1A99FE] dark:bg-blue-600 hover:bg-[#007ADC] dark:hover:bg-blue-500 text-white px-8 py-2 rounded-full font-semibold inline-block text-center"
               >
                 Add
               </button>
             </div>
             <!-- Navigation Buttons -->
             <div
-              class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300"
+              class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300 dark:border-neutral-600"
             >
               <a
                 href="utilities.html"
-                class="bg-white text-[#013056] border-2 hover:text-white hover:bg-[#013056] border-[#013056] px-8 py-2 rounded-full font-semibold inline-block text-center"
+                class="bg-white dark:bg-neutral-800 text-[#013056] dark:text-neutral-100 border-2 hover:text-white dark:hover:text-neutral-100 hover:bg-[#013056] dark:hover:bg-neutral-700 border-[#013056] dark:border-neutral-100 px-8 py-2 rounded-full font-semibold inline-block text-center"
                 >Back</a
               >
               <a
                 href="requiredDocuments.html"
-                class="bg-[#D71624] text-white px-8 py-2 rounded-full font-semibold inline-block text-center hover:bg-red-700"
+                class="bg-[#D71624] dark:bg-red-600 text-white px-8 py-2 rounded-full font-semibold inline-block text-center hover:bg-red-700 dark:hover:bg-red-500"
                 >Next</a
               >
             </div>
@@ -136,16 +156,22 @@
       </div>
     </section>
     <footer class="">
-      <div class="bg-[#013056] py-20">
+      <div class="bg-[#013056] dark:bg-neutral-900 py-20">
         <div
-          class="text-white flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32"
+          class="text-white dark:text-neutral-100 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32"
         >
           <div class="space-y-2">
             <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
             <div class="flex flex-col space-y-1">
-              <a href="">Solo Parent Online Registration</a>
-              <a href="">Senior Citizen Online Registration</a>
-              <a href="">Educational Assistance Online Application</a>
+              <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400"
+                >Solo Parent Online Registration</a
+              >
+              <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400"
+                >Senior Citizen Online Registration</a
+              >
+              <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400"
+                >Educational Assistance Online Application</a
+              >
             </div>
           </div>
           <div class="space-y-2">
@@ -161,8 +187,10 @@
         </div>
       </div>
 
-      <div class="bg-[#001225] py-6">
-        <h1 class="flex justify-center text-white text-sm font-extralight">
+      <div class="bg-[#001225] dark:bg-neutral-950 py-6">
+        <h1
+          class="flex justify-center text-white dark:text-neutral-100 text-sm font-extralight"
+        >
           © City Management Information Systems and Innovation Department
         </h1>
       </div>
@@ -181,18 +209,18 @@
       const row1 = document.createElement("div");
       row1.className = "grid grid-cols-3 gap-4 mt-4";
       row1.innerHTML = `
-            <input type="text" placeholder="Name of Household Member" class="border p-2 rounded w-full" />
-            <input type="text" placeholder="Relationship" class="border p-2 rounded w-full" />
-            <input type="text" placeholder="Age" class="border p-2 rounded w-full" />
+            <input type="text" placeholder="Name of Household Member" class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
+            <input type="text" placeholder="Relationship" class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
+            <input type="text" placeholder="Age" class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
         `;
 
       // Second row
       const row2 = document.createElement("div");
       row2.className = "grid grid-cols-5 gap-4";
       row2.innerHTML = `
-            <input type="text" placeholder="Civil Status" class="col-span-1 border p-2 rounded w-full" />
-            <input type="text" placeholder="Educational Attainment" class="col-span-2 border p-2 rounded w-full" />
-            <input type="text" placeholder="Skills/Vocational Training Attended" class="col-span-2 border p-2 rounded w-full" />
+            <input type="text" placeholder="Civil Status" class="col-span-1 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
+            <input type="text" placeholder="Educational Attainment" class="col-span-2 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
+            <input type="text" placeholder="Skills/Vocational Training Attended" class="col-span-2 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400" />
         `;
 
       // Remove button wrapper (centered)
@@ -203,7 +231,7 @@
       const removeBtn = document.createElement("button");
       removeBtn.type = "button";
       removeBtn.className =
-        "bg-red-500 hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold";
+        "bg-red-500 dark:bg-red-600 hover:bg-red-700 dark:hover:bg-red-500 text-white px-6 py-2 rounded-full font-semibold";
       removeBtn.textContent = "Remove";
       removeBtn.onclick = function () {
         container.remove();
@@ -231,5 +259,31 @@
       form.insertBefore(hr, hrRef);
       form.insertBefore(container, hrRef);
     });
+  </script>
+  <script>
+    // Dark mode toggle
+    const darkToggle = document.getElementById("dark-mode-toggle");
+    const lightToggle = document.getElementById("light-mode-toggle");
+    const html = document.documentElement;
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      html.classList.add("dark");
+    }
+
+    // Toggle function
+    function toggleDarkMode() {
+      if (html.classList.contains("dark")) {
+        html.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      } else {
+        html.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      }
+    }
+
+    darkToggle.addEventListener("click", toggleDarkMode);
+    lightToggle.addEventListener("click", toggleDarkMode);
   </script>
 </html>

@@ -14,106 +14,112 @@
     </style>
 </head>
 <body class="">
-    <nav class="py-8 bg-white shadow-sm/20 relative">
+    <nav class="py-8 bg-white dark:bg-neutral-900 shadow-sm/20 relative">
         <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 flex justify-between items-center">
             <a><img class="h-16 w-auto" src="images/cagayandeoro.png" alt=""></a>
-            <div class=""> 
-                <ul class="flex space-x-8 text-lg text-[#013056]">
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">Home</a></li>
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">Services</a></li>
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">About</a></li>
+            <div class="flex items-center space-x-8">
+                <ul class="flex space-x-8 text-lg text-[#013056] dark:text-neutral-100">
+                    <li class="hover:text-[#1A99FE] dark:hover:text-blue-400"><a href="index.html" class="">Home</a></li>
+                    <li class="hover:text-[#1A99FE] dark:hover:text-blue-400"><a href="index.html" class="">Services</a></li>
+                    <li class="hover:text-[#1A99FE] dark:hover:text-blue-400"><a href="index.html" class="">About</a></li>
                 </ul>
+                <button id="dark-mode-toggle" class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 hidden dark:block">
+                    <i class="ph ph-moon text-2xl"></i>
+                </button>
+                <button id="light-mode-toggle" class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 block dark:hidden">
+                    <i class="ph ph-sun text-2xl"></i>
+                </button>
             </div>
         </div>
     </nav>
-    <section class="bg-[#EEF3FB]">
+    <section class="bg-[#EEF3FB] dark:bg-neutral-800">
         <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 py-20 space-y-6">
-            <div class="max-w-7xl mx-auto bg-white p-8 rounded shadow">
-    <h2 class="text-2xl font-bold text-[#013056] mb-6 pb-2">Type of Disability</h2>
+            <div class="max-w-7xl mx-auto bg-white dark:bg-neutral-900 p-8 rounded shadow">
+    <h2 class="text-2xl font-bold text-[#013056] dark:text-neutral-100 mb-6 pb-2">Type of Disability</h2>
     <form>
         <div class="mx-12 grid grid-cols-1 md:grid-cols-3 gap-8">
 
             <!-- Column 1 -->
             <div>
-            <h3 class="font-bold text-[#013056] mb-2">Learning Disabilities</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mb-2">Learning Disabilities</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> ADHD</label><br>
-                <label><input type="checkbox" class="mr-2"> Dyslexia</label><br>
-                <label><input type="checkbox" class="mr-2"> Dyscalcula</label><br>
-                <label><input type="checkbox" class="mr-2"> Dysgraphia</label>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> ADHD</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Dyslexia</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Dyscalcula</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Dysgraphia</label>
             </div>
 
-            <h3 class="font-bold text-[#013056] mt-6 mb-2">Psychosocial Disabilities</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mt-6 mb-2">Psychosocial Disabilities</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> Mentally Ill</label><br>
-                <label><input type="checkbox" class="mr-2"> Brain Injury</label><br>
-                <label><input type="checkbox" class="mr-2"> Schizophrenia</label>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Mentally Ill</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Brain Injury</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Schizophrenia</label>
             </div>
 
-            <h3 class="font-bold text-[#013056] mt-6 mb-2">Psychosocial Disabilities</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mt-6 mb-2">Psychosocial Disabilities</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> Total</label><br>
-                <label><input type="checkbox" class="mr-2"> Partial</label><br>
-                <label><input type="checkbox" class="mr-2"> Low Vision</label>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Total</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Partial</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Low Vision</label>
             </div>
             </div>
 
             <!-- Column 2 -->
             <div>
-            <h3 class="font-bold text-[#013056] mb-2">Development Abilities</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mb-2">Development Abilities</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> Mental Retardation</label><br>
-                <label><input type="checkbox" class="mr-2"> Down Syndrome</label><br>
-                <label><input type="checkbox" class="mr-2"> Cerebral Palsy</label><br>
-                <label><input type="checkbox" class="mr-2"> Epilepsy</label><br>
-                <label><input type="checkbox" class="mr-2"> Autism</label>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Mental Retardation</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Down Syndrome</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Cerebral Palsy</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Epilepsy</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Autism</label>
             </div>
 
-            <h3 class="font-bold text-[#013056] mt-6 mb-2">Deaf</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mt-6 mb-2">Deaf</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> Hard of Hearing</label><br>
-                <label><input type="checkbox" class="mr-2"> Deaf</label>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Hard of Hearing</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Deaf</label>
             </div>
 
-            <h3 class="font-bold text-[#013056] mt-6 mb-2">Others</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mt-6 mb-2">Others</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> Speech Impairment</label><br>
-                <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Speech Impairment</label><br>
+                <input type="text" placeholder="Description" class="border dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full dark:bg-neutral-800 dark:text-neutral-100 dark:placeholder-neutral-400" />
             </div>
             </div>
 
             <!-- Column 3 -->
             <div>
-            <h3 class="font-bold text-[#013056] mb-2">Orthopedic/Musculoskeletal Disabilities</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mb-2">Orthopedic/Musculoskeletal Disabilities</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> Polio</label><br>
-                <label><input type="checkbox" class="mr-2"> Stroke/Paralyzed</label><br>
-                <label><input type="checkbox" class="mr-2"> Amputee</label><br>
-                <label><input type="checkbox" class="mr-2"> Underdeveloped</label><br>
-                <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
-                <label><input type="checkbox" class="mr-2 mt-2"> Missing</label><br>
-                <input type="text" placeholder="Description" class="border rounded mt-2 px-2 py-1 w-full" />
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Polio</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Stroke/Paralyzed</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Amputee</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Underdeveloped</label><br>
+                <input type="text" placeholder="Description" class="border dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full dark:bg-neutral-800 dark:text-neutral-100 dark:placeholder-neutral-400" />
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2 mt-2"> Missing</label><br>
+                <input type="text" placeholder="Description" class="border dark:border-neutral-600 rounded mt-2 px-2 py-1 w-full dark:bg-neutral-800 dark:text-neutral-100 dark:placeholder-neutral-400" />
             </div>
 
-            <h3 class="font-bold text-[#013056] mt-6 mb-2">Assistive Device Used</h3>
+            <h3 class="font-bold text-[#013056] dark:text-neutral-100 mt-6 mb-2">Assistive Device Used</h3>
             <div class="space-y-1">
-                <label><input type="checkbox" class="mr-2"> Wheel Chair</label><br>
-                <label><input type="checkbox" class="mr-2"> Crutches</label><br>
-                <label><input type="checkbox" class="mr-2"> Walker</label><br>
-                <label><input type="checkbox" class="mr-2"> Electronic Wheelchair</label><br>
-                <label><input type="checkbox" class="mr-2"> Quad Cane</label><br>
-                <label><input type="checkbox" class="mr-2"> White Cane</label><br>
-                <label><input type="checkbox" class="mr-2"> Hearing Aid</label><br>
-                <label><input type="checkbox" class="mr-2"> Prosthesis</label><br>
-                <label><input type="checkbox" class="mr-2"> Corrective Eye Glasses</label>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Wheel Chair</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Crutches</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Walker</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Electronic Wheelchair</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Quad Cane</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> White Cane</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Hearing Aid</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Prosthesis</label><br>
+                <label class="text-[#013056] dark:text-neutral-300"><input type="checkbox" class="mr-2"> Corrective Eye Glasses</label>
             </div>
             </div>
         </div>
 
         <!-- Navigation Buttons -->
-        <div class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300">
-            <a href="register.html" class="bg-white text-[#013056] border-2 hover:text-white hover:bg-[#013056] border-[#013056] px-8 py-2 rounded-full font-semibold inline-block text-center">Back</a>
-            <a href="employmentAndEducation.html" class="bg-[#D71624] text-white px-8 py-2 hover:bg-red-700 rounded-full font-semibold inline-block text-center">Next</a>
+        <div class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300 dark:border-neutral-600">
+            <a href="register.html" class="bg-white dark:bg-neutral-800 text-[#013056] dark:text-neutral-100 border-2 hover:text-white hover:bg-[#013056] dark:hover:bg-neutral-700 border-[#013056] dark:border-neutral-600 px-8 py-2 rounded-full font-semibold inline-block text-center">Back</a>
+            <a href="employmentAndEducation.html" class="bg-[#D71624] dark:bg-red-800 text-white px-8 py-2 hover:bg-red-700 dark:hover:bg-red-900 rounded-full font-semibold inline-block text-center">Next</a>
         </div>
     </form>
         </div>
@@ -132,8 +138,8 @@
         </div>
     </section>
     <footer class="">
-        <div class="bg-[#013056] py-20">
-            <div class="text-white flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32">
+        <div class="bg-[#013056] dark:bg-neutral-900 py-20">
+            <div class="text-white dark:text-neutral-100 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32">
                 <div class="space-y-2">
                     <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
                     <div class="flex flex-col space-y-1">
@@ -153,9 +159,30 @@
             </div>
         </div>
 
-        <div class="bg-[#001225] py-6">
-            <h1 class="flex justify-center text-white text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
+        <div class="bg-[#001225] dark:bg-neutral-950 py-6">
+            <h1 class="flex justify-center text-white dark:text-neutral-100 text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
         </div>
     </footer>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            html.classList.add('dark');
+            themeToggle.innerHTML = '<i class="ph ph-moon text-2xl"></i>';
+        } else {
+            themeToggle.innerHTML = '<i class="ph ph-sun text-2xl"></i>';
+        }
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            themeToggle.innerHTML = isDark ? '<i class="ph ph-moon text-2xl"></i>' : '<i class="ph ph-sun text-2xl"></i>';
+        });
+    </script>
 </body>
 </html>

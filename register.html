@@ -17,54 +17,80 @@
     </style>
   </head>
   <body class="">
-    <nav class="py-8 bg-white shadow-sm/20 relative">
-      <div class="mx-40 flex justify-between items-center">
+    <nav class="py-8 bg-white dark:bg-neutral-900 shadow-sm/20 relative">
+      <div
+        class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 flex justify-between items-center"
+      >
         <a><img class="h-16 w-auto" src="images/cagayandeoro.png" alt="" /></a>
-        <div class="">
-          <ul class="flex space-x-8 text-lg text-[#013056]">
-            <li class="hover:text-[#1A99FE]">
+        <div class="flex items-center space-x-8">
+          <ul
+            class="flex space-x-8 text-lg text-[#013056] dark:text-neutral-100"
+          >
+            <li class="hover:text-[#1A99FE] dark:hover:text-blue-400">
               <a href="index.html" class="">Home</a>
             </li>
-            <li class="hover:text-[#1A99FE]">
+            <li class="hover:text-[#1A99FE] dark:hover:text-blue-400">
               <a href="index.html" class="">Services</a>
             </li>
-            <li class="hover:text-[#1A99FE]">
+            <li class="hover:text-[#1A99FE] dark:hover:text-blue-400">
               <a href="index.html" class="">About</a>
             </li>
           </ul>
+          <button
+            id="dark-mode-toggle"
+            class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 hidden dark:block"
+          >
+            <i class="ph ph-moon text-2xl"></i>
+          </button>
+          <button
+            id="light-mode-toggle"
+            class="text-[#013056] dark:text-neutral-100 hover:text-[#1A99FE] dark:hover:text-blue-400 block dark:hidden"
+          >
+            <i class="ph ph-sun text-2xl"></i>
+          </button>
         </div>
       </div>
     </nav>
-    <section class="bg-[#EEF3FB]">
+    <section class="bg-[#EEF3FB] dark:bg-neutral-800">
       <div class="py-20 space-y-6">
-        <div class="w-10/12 mx-auto bg-white p-8 rounded shadow">
-          <h2 class="text-2xl font-bold mb-6 text-[#013056]">
+        <div
+          class="w-10/12 mx-auto bg-white dark:bg-neutral-900 p-8 rounded shadow"
+        >
+          <h2
+            class="text-2xl font-bold mb-6 text-[#013056] dark:text-neutral-100"
+          >
             Personal Information
           </h2>
           <form class="space-y-6">
             <!-- Application Type -->
             <div class="flex items-center space-x-4">
-              <label class="flex items-center">
+              <label
+                class="flex items-center text-gray-700 dark:text-neutral-300"
+              >
                 <input
                   type="radio"
                   name="applicationType"
-                  class="mr-2 accent-black"
+                  class="mr-2 accent-black dark:accent-neutral-100"
                 />
                 New
               </label>
-              <label class="flex items-center">
+              <label
+                class="flex items-center text-gray-700 dark:text-neutral-300"
+              >
                 <input
                   type="radio"
                   name="applicationType"
-                  class="mr-2 accent-black"
+                  class="mr-2 accent-black dark:accent-neutral-100"
                 />
                 Renew
               </label>
-              <label class="flex items-center">
+              <label
+                class="flex items-center text-gray-700 dark:text-neutral-300"
+              >
                 <input
                   type="radio"
                   name="applicationType"
-                  class="mr-2 accent-black"
+                  class="mr-2 accent-black dark:accent-neutral-100"
                 />
                 Lost ID
               </label>
@@ -75,55 +101,69 @@
               <input
                 type="text"
                 placeholder="Last Name"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <input
                 type="text"
                 placeholder="First Name"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <input
                 type="text"
                 placeholder="Middle Name"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
             </div>
 
             <!-- Demographic Info -->
             <div class="grid grid-cols-4 gap-4">
               <select
-                class="border p-2 rounded w-full text-gray-400"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full text-gray-400 dark:text-neutral-400 bg-white dark:bg-neutral-800"
                 placeholder="Sex"
-                oninput="this.style.color='#000'"
+                oninput="this.style.color='#000'; this.classList.remove('dark:text-neutral-400')"
               >
-                <option value="" disabled selected class="text-gray-400">
+                <option
+                  value=""
+                  disabled
+                  selected
+                  class="text-gray-400 dark:text-neutral-400"
+                >
                   Sex
                 </option>
-                <option class="text-black">Male</option>
-                <option class="text-black">Female</option>
+                <option class="text-black dark:text-neutral-100">Male</option>
+                <option class="text-black dark:text-neutral-100">Female</option>
               </select>
               <select
-                class="border p-2 rounded w-full text-gray-400"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full text-gray-400 dark:text-neutral-400 bg-white dark:bg-neutral-800"
                 placeholder="Civil Status"
-                oninput="this.style.color='#000'"
+                oninput="this.style.color='#000'; this.classList.remove('dark:text-neutral-400')"
               >
-                <option value="" disabled selected class="text-gray-400">
+                <option
+                  value=""
+                  disabled
+                  selected
+                  class="text-gray-400 dark:text-neutral-400"
+                >
                   Civil Status
                 </option>
-                <option class="text-black">Single</option>
-                <option class="text-black">Married</option>
-                <option class="text-black">Widowed</option>
+                <option class="text-black dark:text-neutral-100">Single</option>
+                <option class="text-black dark:text-neutral-100">
+                  Married
+                </option>
+                <option class="text-black dark:text-neutral-100">
+                  Widowed
+                </option>
               </select>
               <input
                 type="date"
                 placeholder="Date of Birth"
-                class="border p-2 rounded w-full text-gray-400 placeholder-gray-400"
-                oninput="this.style.color='#000'"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full text-gray-400 dark:text-neutral-400 placeholder-gray-400 dark:placeholder-neutral-400 bg-white dark:bg-neutral-800"
+                oninput="this.style.color='#000'; this.classList.remove('dark:text-neutral-400')"
               />
               <input
                 type="text"
                 placeholder="Place of Birth"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
             </div>
 
@@ -132,67 +172,76 @@
               <input
                 type="text"
                 placeholder="Barangay"
-                class="col-span-1 border p-2 rounded w-full"
+                class="col-span-1 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <input
                 type="text"
                 placeholder="Address"
-                class="col-span-3 border p-2 rounded w-full"
+                class="col-span-3 border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
             </div>
 
             <div class="grid grid-cols-2 gap-4">
               <select
-                class="border p-2 rounded w-full text-gray-400"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full text-gray-400 dark:text-neutral-400 bg-white dark:bg-neutral-800"
                 placeholder="Blood Type"
-                oninput="this.style.color='#000'"
+                oninput="this.style.color='#000'; this.classList.remove('dark:text-neutral-400')"
               >
-                <option value="" disabled selected class="text-gray-400">
+                <option
+                  value=""
+                  disabled
+                  selected
+                  class="text-gray-400 dark:text-neutral-400"
+                >
                   Blood Type
                 </option>
-                <option class="text-black">None</option>
-                <option class="text-black">A+</option>
-                <option class="text-black">A-</option>
-                <option class="text-black">B+</option>
-                <option class="text-black">B-</option>
-                <option class="text-black">O+</option>
-                <option class="text-black">O-</option>
-                <option class="text-black">AB+</option>
-                <option class="text-black">AB-</option>
+                <option class="text-black dark:text-neutral-100">None</option>
+                <option class="text-black dark:text-neutral-100">A+</option>
+                <option class="text-black dark:text-neutral-100">A-</option>
+                <option class="text-black dark:text-neutral-100">B+</option>
+                <option class="text-black dark:text-neutral-100">B-</option>
+                <option class="text-black dark:text-neutral-100">O+</option>
+                <option class="text-black dark:text-neutral-100">O-</option>
+                <option class="text-black dark:text-neutral-100">AB+</option>
+                <option class="text-black dark:text-neutral-100">AB-</option>
               </select>
               <input
                 type="text"
                 placeholder="Religion"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
             </div>
             <input
               type="text"
               placeholder="Source of Income"
-              class="border p-2 rounded w-full"
+              class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
             />
 
             <div class="grid grid-cols-2 gap-4">
               <input
                 type="text"
                 placeholder="Contact No."
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
               <div class="flex items-center space-x-4">
-                <span>Comelec Registered:</span>
-                <label class="flex items-center"
+                <span class="text-gray-700 dark:text-neutral-300"
+                  >Comelec Registered:</span
+                >
+                <label
+                  class="flex items-center text-gray-700 dark:text-neutral-300"
                   ><input
                     type="radio"
                     name="comelec"
-                    class="mr-2 accent-black"
+                    class="mr-2 accent-black dark:accent-neutral-100"
                   />
                   Yes</label
                 >
-                <label class="flex items-center"
+                <label
+                  class="flex items-center text-gray-700 dark:text-neutral-300"
                   ><input
                     type="radio"
                     name="comelec"
-                    class="mr-2 accent-black"
+                    class="mr-2 accent-black dark:accent-neutral-100"
                   />
                   No</label
                 >
@@ -200,79 +249,88 @@
             </div>
 
             <div class="pt-4">
-              <h3 class="text-xl font-semibold mb-2 text-[#013056]">
+              <h3
+                class="text-xl font-semibold mb-2 text-[#013056] dark:text-neutral-100"
+              >
                 Membership
               </h3>
               <div class="flex space-x-4 mb-2">
-                <label class="flex items-center"
+                <label
+                  class="flex items-center text-gray-700 dark:text-neutral-300"
                   ><input type="checkbox" class="mr-2" /> SSS</label
                 >
-                <label class="flex items-center"
+                <label
+                  class="flex items-center text-gray-700 dark:text-neutral-300"
                   ><input type="checkbox" class="mr-2" /> GSIS</label
                 >
-                <label class="flex items-center"
+                <label
+                  class="flex items-center text-gray-700 dark:text-neutral-300"
                   ><input type="checkbox" class="mr-2" /> Phil Health</label
                 >
               </div>
               <input
                 type="text"
                 placeholder="Description"
-                class="border p-2 rounded w-full"
+                class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
               />
             </div>
 
             <!-- Guardian and Organization Info -->
             <div class="grid grid-cols-2 gap-8">
               <div>
-                <h3 class="text-xl font-semibold mb-2 text-[#013056]">
+                <h3
+                  class="text-xl font-semibold mb-2 text-[#013056] dark:text-neutral-100"
+                >
                   Guardian
                 </h3>
                 <input
                   type="text"
                   placeholder="Guardian's Name"
-                  class="border p-2 rounded w-full mb-2"
+                  class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full mb-2 bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
                 />
                 <input
                   type="text"
                   placeholder="Relationship"
-                  class="border p-2 rounded w-full mb-2"
+                  class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full mb-2 bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
                 />
                 <input
                   type="text"
                   placeholder="Contact No."
-                  class="border p-2 rounded w-full mb-2"
+                  class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full mb-2 bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
                 />
                 <input
                   type="text"
                   placeholder="Address"
-                  class="border p-2 rounded w-full"
+                  class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
                 />
               </div>
               <div>
-                <h3 class="text-xl font-semibold mb-2 text-[#013056]">
+                <h3
+                  class="text-xl font-semibold mb-2 text-[#013056] dark:text-neutral-100"
+                >
                   Organization Affiliated
                 </h3>
                 <input
                   type="text"
                   placeholder="Organization Name"
-                  class="border p-2 rounded w-full mb-2"
+                  class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full mb-2 bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
                 />
                 <input
                   type="text"
                   placeholder="President Name"
-                  class="border p-2 rounded w-full mb-2"
+                  class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full mb-2 bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
                 />
                 <input
                   type="text"
                   placeholder="Contact No."
-                  class="border p-2 rounded w-full"
+                  class="border border-gray-300 dark:border-neutral-600 p-2 rounded w-full bg-white dark:bg-neutral-800 text-gray-900 dark:text-neutral-100 placeholder-gray-500 dark:placeholder-neutral-400"
                 />
               </div>
             </div>
 
             <!-- Consent and Submit -->
             <div
-              class="mt-6 text-sm text-gray-700 border-y border-gray-300 py-4"
+              class="mt-6 text-sm text-gray-700 dark:text-neutral-300 border-y border-gray-300 dark:border-neutral-600 py-4"
             >
               <p>
                 By submitting the data required in this
@@ -293,12 +351,13 @@
             </div>
 
             <div class="flex items-center justify-end mt-6 space-x-8">
-              <label class="flex items-center text-sm"
+              <label
+                class="flex items-center text-sm text-gray-700 dark:text-neutral-300"
                 ><input type="checkbox" class="mr-2" /> I Agree</label
               >
               <a
                 href="typeOfDisability.html"
-                class="bg-[#D71624] text-white font-semibold px-8 py-2 rounded-4xl hover:bg-red-700 text-center inline-block"
+                class="bg-[#D71624] dark:bg-red-600 text-white font-semibold px-8 py-2 rounded-4xl hover:bg-red-700 dark:hover:bg-red-500 text-center inline-block"
                 >Next</a
               >
             </div>
@@ -307,7 +366,9 @@
       </div>
     </section>
     <section class="py-12">
-      <div class="flex justify-center items-center space-x-32">
+      <div
+        class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32"
+      >
         <a href="https://cagayandeoro.gov.ph/" target="_blank">
           <img
             src="images/cdocogf.png"
@@ -335,14 +396,22 @@
       </div>
     </section>
     <footer class="">
-      <div class="bg-[#013056] py-20">
-        <div class="text-white flex justify-center space-x-32">
+      <div class="bg-[#013056] dark:bg-neutral-900 py-20">
+        <div
+          class="text-white dark:text-neutral-100 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32"
+        >
           <div class="space-y-2">
             <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
             <div class="flex flex-col space-y-1">
-              <a href="">Solo Parent Online Registration</a>
-              <a href="">Senior Citizen Online Registration</a>
-              <a href="">Educational Assistance Online Application</a>
+              <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400"
+                >Solo Parent Online Registration</a
+              >
+              <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400"
+                >Senior Citizen Online Registration</a
+              >
+              <a href="" class="hover:text-[#1A99FE] dark:hover:text-blue-400"
+                >Educational Assistance Online Application</a
+              >
             </div>
           </div>
           <div class="space-y-2">
@@ -358,11 +427,39 @@
         </div>
       </div>
 
-      <div class="bg-[#001225] py-6">
-        <h1 class="flex justify-center text-white text-sm font-extralight">
+      <div class="bg-[#001225] dark:bg-neutral-950 py-6">
+        <h1
+          class="flex justify-center text-white dark:text-neutral-100 text-sm font-extralight"
+        >
           © City Management Information Systems and Innovation Department
         </h1>
       </div>
     </footer>
+    <script>
+      // Dark mode toggle
+      const darkToggle = document.getElementById("dark-mode-toggle");
+      const lightToggle = document.getElementById("light-mode-toggle");
+      const html = document.documentElement;
+
+      // Load saved theme
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        html.classList.add("dark");
+      }
+
+      // Toggle function
+      function toggleDarkMode() {
+        if (html.classList.contains("dark")) {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      }
+
+      darkToggle.addEventListener("click", toggleDarkMode);
+      lightToggle.addEventListener("click", toggleDarkMode);
+    </script>
   </body>
 </html>
