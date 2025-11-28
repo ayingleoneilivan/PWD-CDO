@@ -1,178 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+      }
     </style>
-</head>
-<body class="">
+  </head>
+  <body class="">
     <nav class="py-8 bg-white shadow-sm/20 relative">
-        <div class="mx-40  flex justify-between items-center"</div>
-            <a><img class="h-16 w-auto" src="images/cagayandeoro.png" alt=""></a>
-            <div class=""> 
-                <ul class="flex space-x-8 text-lg text-[#013056]">
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">Home</a></li>
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">Services</a></li>
-                    <li class="hover:text-[#1A99FE]"><a href="index.html" class="">About</a></li>
-                </ul>
-            </div>
+      <div
+        class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 flex justify-between items-center"
+      >
+        <a><img class="h-16 w-auto" src="images/cagayandeoro.png" alt="" /></a>
+        <div class="">
+          <ul class="flex space-x-8 text-lg text-[#013056]">
+            <li class="hover:text-[#1A99FE]">
+              <a href="index.html" class="">Home</a>
+            </li>
+            <li class="hover:text-[#1A99FE]">
+              <a href="index.html" class="">Services</a>
+            </li>
+            <li class="hover:text-[#1A99FE]">
+              <a href="index.html" class="">About</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <section class="bg-[#EEF3FB]">
-        <div class="py-20 space-y-6">
-            <div class="max-w-7xl mx-auto bg-white p-8 rounded shadow">
-                <h2 class="text-2xl font-bold mb-6 text-[#013056]">Required Documents</h2>
-                <div class="mx-12 flex flex-col justify-center">
-                    <h1 class="text-[#D71624]">Please upload the required documents for your registration to be VALIDATED and APPROVED. If you are using a MOBILE PHONE you can DIRECTLY use your CAMERA in UPLOADING your image file.</h1>
-                    <div class="flex justify-center">
-                    <ul class="list-decimal list-inside space-y-2 mt-4 text-black">
-                        <li>Brgy. Certificate of Residency</li>
-                        <li>Medical Certificate Confirming client's Disability</li>
-                        <li>1x1 ID Picture</li>
-                        <li>Photocopy of Birth Certificate of PWD</li>
-                        <li>Specimen Signature (White background)</li>
-                    </ul>
-                    </div>
-                    <div class="mt-8 flex items-center justify-center">
-                        <button type="button" id="file-upload-btn" class="py-4 px-20 border-2 border-dashed border-gray-500 rounded-lg cursor-pointer transition hover:border-[#1A99FE] hover:text-[#1A99FE]">
-                            <span class="font-semibold text-black mr-1">Click here</span>
-                            <span class="text-gray-500">to upload a file</span>
-                        </button>
-                        <input id="file-upload" type="file" class="hidden" />
-                    </div>
-                </div>
-                <div class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300">
-                    <a href="familyMember.html" class="bg-white text-[#013056] border-2 hover:text-white hover:bg-[#013056] border-[#013056] px-8 py-2 rounded-full font-semibold inline-block text-center">Back</a>
-                    <button type="button" data-modal-target="default-modal" data-modal-toggle="default-modal" class="cursor-pointer bg-[#D71624] text-white px-8 py-2 rounded-full font-semibold inline-block text-center hover:bg-red-700">Submit</button>
-                </div>
+      <div class="mx-4 md:mx-8 lg:mx-16 xl:mx-40 py-20 space-y-6">
+        <div class="max-w-7xl mx-auto bg-white p-8 rounded shadow">
+          <h2 class="text-2xl font-bold mb-6 text-[#013056]">
+            Required Documents
+          </h2>
+          <div class="mx-12 flex flex-col justify-center">
+            <h1 class="text-[#D71624]">
+              Please upload the required documents for your registration to be
+              VALIDATED and APPROVED. If you are using a MOBILE PHONE you can
+              DIRECTLY use your CAMERA in UPLOADING your image file.
+            </h1>
+            <div class="flex justify-center">
+              <ul class="list-decimal list-inside space-y-2 mt-4 text-black">
+                <li>Brgy. Certificate of Residency</li>
+                <li>Medical Certificate Confirming client's Disability</li>
+                <li>1x1 ID Picture</li>
+                <li>Photocopy of Birth Certificate of PWD</li>
+                <li>Specimen Signature (White background)</li>
+              </ul>
             </div>
+            <div class="mt-8 flex items-center justify-center">
+              <button
+                type="button"
+                id="file-upload-btn"
+                class="py-4 px-20 border-2 border-dashed border-gray-500 rounded-lg cursor-pointer transition hover:border-[#1A99FE] hover:text-[#1A99FE]"
+              >
+                <span class="font-semibold text-black mr-1">Click here</span>
+                <span class="text-gray-500">to upload a file</span>
+              </button>
+              <input id="file-upload" type="file" class="hidden" />
+            </div>
+          </div>
+          <div
+            class="flex justify-end items-center mt-8 space-x-8 border-t pt-6 border-gray-300"
+          >
+            <a
+              href="familyMember.html"
+              class="bg-white text-[#013056] border-2 hover:text-white hover:bg-[#013056] border-[#013056] px-8 py-2 rounded-full font-semibold inline-block text-center"
+              >Back</a
+            >
+            <button
+              type="button"
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="cursor-pointer bg-[#D71624] text-white px-8 py-2 rounded-full font-semibold inline-block text-center hover:bg-red-700"
+            >
+              Submit
+            </button>
+          </div>
         </div>
+      </div>
     </section>
     <section class="py-12">
-        <div class="flex justify-center items-center space-x-32">
-            <a href="https://cagayandeoro.gov.ph/" target="_blank">
-                <img src="images/cdocogf.png" alt="Logo 1" class="max-h-20 w-auto object-contain" />
-            </a>
-            <a href="https://cagayandeoro.gov.ph/index.php/news/the-city-mayor/rise1.html" target="_blank">
-                <img src="images/cdorise.png" alt="Logo 2" class="max-h-20 w-auto object-contain" />
-            </a>
-            <a href="https://www.facebook.com/lgucdo.cmisid" target="_blank">
-                <img src="images/cdoict.png" alt="Logo 3" class="max-h-20 w-auto object-contain" />
-            </a>
-        </div>
+      <div
+        class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32"
+      >
+        <a href="https://cagayandeoro.gov.ph/" target="_blank">
+          <img
+            src="images/cdocogf.png"
+            alt="Logo 1"
+            class="max-h-20 w-auto object-contain"
+          />
+        </a>
+        <a
+          href="https://cagayandeoro.gov.ph/index.php/news/the-city-mayor/rise1.html"
+          target="_blank"
+        >
+          <img
+            src="images/cdorise.png"
+            alt="Logo 2"
+            class="max-h-20 w-auto object-contain"
+          />
+        </a>
+        <a href="https://www.facebook.com/lgucdo.cmisid" target="_blank">
+          <img
+            src="images/cdoict.png"
+            alt="Logo 3"
+            class="max-h-20 w-auto object-contain"
+          />
+        </a>
+      </div>
     </section>
     <footer class="">
-        <div class="bg-[#013056] py-20">
-            <div class="text-white flex justify-center space-x-32">
-                <div class="space-y-2">
-                    <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
-                    <div class="flex flex-col space-y-1">
-                        <a href="">Solo Parent Online Registration</a>
-                        <a href="">Senior Citizen Online Registration</a>
-                        <a href="">Educational Assistance Online Application</a>
-                    </div>
-                </div>
-                <div class="space-y-2">
-                    <h1 class="text-lg font-semibold">SUPPORT</h1>
-                    <div class="flex flex-col space-y-1">
-                        <h2>Phone: +63 953 112 2974</h2>
-                        <h2>Person with Disability Section</h2>
-                        <h2>City Social Welfare Department, City Hall, Cagayan de Oro City</h2>
-                    </div>
-                </div>
+      <div class="bg-[#013056] py-20">
+        <div
+          class="text-white flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16 xl:space-x-32"
+        >
+          <div class="space-y-2">
+            <h1 class="text-lg font-semibold">OTHER RELATED SYSTEMS</h1>
+            <div class="flex flex-col space-y-1">
+              <a href="">Solo Parent Online Registration</a>
+              <a href="">Senior Citizen Online Registration</a>
+              <a href="">Educational Assistance Online Application</a>
             </div>
+          </div>
+          <div class="space-y-2">
+            <h1 class="text-lg font-semibold">SUPPORT</h1>
+            <div class="flex flex-col space-y-1">
+              <h2>Phone: +63 953 112 2974</h2>
+              <h2>Person with Disability Section</h2>
+              <h2>
+                City Social Welfare Department, City Hall, Cagayan de Oro City
+              </h2>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="bg-[#001225] py-6">
-            <h1 class="flex justify-center text-white text-sm font-extralight">© City Management Information Systems and Innovation Department</h1>
-        </div>
+      <div class="bg-[#001225] py-6">
+        <h1 class="flex justify-center text-white text-sm font-extralight">
+          © City Management Information Systems and Innovation Department
+        </h1>
+      </div>
     </footer>
     <!-- Main modal -->
-    <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <!-- Overlay background -->
-        <div class="fixed inset-0 bg-[#2D2E31]/25 z-[-1]"></div>
+    <div
+      id="default-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <!-- Overlay background -->
+      <div class="fixed inset-0 bg-[#2D2E31]/25 z-[-1]"></div>
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
         <div class="relative p-4 w-full max-w-2xl max-h-full">
-                    <!-- Modal content -->
-            <div class="relative p-4 w-full max-w-2xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow-sm">
-                    <!-- Modal header -->
-                    <div class="flex items-center justify-between px-8 pt-8 rounded-t border-gray-200">
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-[#D71624] cursor-pointer rounded-lg w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal" aria-label="Close modal">
-                            <i class="ph ph-x text-2xl"></i>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="flex flex-col justify-center px-12 pt-4 pb-8 space-y-4">
-                        <h1 class="text-2xl flex justify-center font-bold text-[#34C759]">
-                            Registration has been submitted!
-                        </h1>
-                        <h2 class="flex justify-center text-justify">
-                            We'll review it shortly and reach out to you via your registered mobile number for updates or further instructions.
-                        </h2>
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex justify-center items-center pb-8">
-                        <a href="index.html" class="cursor-pointer text-white bg-[#D71624] hover:bg-[#BD000E] font-bold rounded-4xl px-8 py-2 text-center">Return to Home</a> 
-                        <!-- <button data-modal-hide="default-modal" type="button" class="cursor-pointer text-white bg-[#D71624] hover:bg-[#BD000E] font-bold rounded-4xl text-sm px-8 py-2 text-center">Close</button> -->
-                    </div>
-                </div>
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow-sm">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between px-8 pt-8 rounded-t border-gray-200"
+            >
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-[#D71624] cursor-pointer rounded-lg w-8 h-8 ms-auto inline-flex justify-center items-center"
+                data-modal-hide="default-modal"
+                aria-label="Close modal"
+              >
+                <i class="ph ph-x text-2xl"></i>
+                <span class="sr-only">Close modal</span>
+              </button>
             </div>
+            <!-- Modal body -->
+            <div class="flex flex-col justify-center px-12 pt-4 pb-8 space-y-4">
+              <h1 class="text-2xl flex justify-center font-bold text-[#34C759]">
+                Registration has been submitted!
+              </h1>
+              <h2 class="flex justify-center text-justify">
+                We'll review it shortly and reach out to you via your registered
+                mobile number for updates or further instructions.
+              </h2>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex justify-center items-center pb-8">
+              <a
+                href="index.html"
+                class="cursor-pointer text-white bg-[#D71624] hover:bg-[#BD000E] font-bold rounded-4xl px-8 py-2 text-center"
+                >Return to Home</a
+              >
+              <!-- <button data-modal-hide="default-modal" type="button" class="cursor-pointer text-white bg-[#D71624] hover:bg-[#BD000E] font-bold rounded-4xl text-sm px-8 py-2 text-center">Close</button> -->
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script>
+  <script>
     // File upload
-    document.getElementById('file-upload-btn').addEventListener('click', function() {
-        document.getElementById('file-upload').click();
-    });
-    
+    document
+      .getElementById("file-upload-btn")
+      .addEventListener("click", function () {
+        document.getElementById("file-upload").click();
+      });
+
     // Modal logic
-    document.addEventListener('DOMContentLoaded', function () {
-        const modal = document.getElementById('default-modal');
-        const openBtns = document.querySelectorAll('[data-modal-toggle="default-modal"]');
-        const closeBtns = document.querySelectorAll('[data-modal-hide="default-modal"]');
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("default-modal");
+      const openBtns = document.querySelectorAll(
+        '[data-modal-toggle="default-modal"]'
+      );
+      const closeBtns = document.querySelectorAll(
+        '[data-modal-hide="default-modal"]'
+      );
 
-        openBtns.forEach(btn => {
-        btn.addEventListener('click', function () {
-            modal.classList.remove('hidden');
-            modal.setAttribute('aria-hidden', 'false');
+      openBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          modal.classList.remove("hidden");
+          modal.setAttribute("aria-hidden", "false");
         });
-        });
+      });
 
-        closeBtns.forEach(btn => {
-        btn.addEventListener('click', function () {
-            modal.classList.add('hidden');
-            modal.setAttribute('aria-hidden', 'true');
+      closeBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          modal.classList.add("hidden");
+          modal.setAttribute("aria-hidden", "true");
         });
-        });
+      });
 
-        // Optional: close modal when clicking outside modal content
-        modal.addEventListener('click', function (e) {
+      // Optional: close modal when clicking outside modal content
+      modal.addEventListener("click", function (e) {
         if (e.target === modal) {
-            modal.classList.add('hidden');
-            modal.setAttribute('aria-hidden', 'true');
+          modal.classList.add("hidden");
+          modal.setAttribute("aria-hidden", "true");
         }
-        });
+      });
 
-        // Optional: close modal on Escape key
-        document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-            modal.classList.add('hidden');
-            modal.setAttribute('aria-hidden', 'true');
+      // Optional: close modal on Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          modal.classList.add("hidden");
+          modal.setAttribute("aria-hidden", "true");
         }
-        });
+      });
     });
-    
-</script>
+  </script>
 </html>
